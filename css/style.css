@@ -37,11 +37,11 @@ body {
 .header {
     height: 100vh;
     
-    background-image: url(../img/logo_no_headings.png);
+    background-image: url(../img/logo_headings_removed_text.png);
     background-size: 45%;
     background-position: center; 
     background-repeat: no-repeat;
-    background-color: #da533c;
+    background-color: #ed462f;
 }
 
 .logo-box {
@@ -80,7 +80,7 @@ body {
 
 .text-box {
     position: absolute;
-    top: 80%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -20%);
 
