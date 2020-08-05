@@ -1,13 +1,15 @@
 /* default colors 
 $color-primary: #ed462f;
-$color-primary-light: ;
-$color-primary-dark: ;
+$color-primary-light: #f38172;
+$color-primary-dark: #d32912;
 
 $color-secondary: #4446e5;
-$color-secondary-light: ;
-$color-secondary-dark: ;
+$color-secondary-light: #787aed;
+$color-secondary-dark: #1c1eca;
 
 $color-tertiary: #627a7f;
+$color-tertiary-light: #7d969b;
+$color-tertiary-dark: #435356;
 
 $color-white: #fff;
 
@@ -18,10 +20,12 @@ $color-logo: #ed462f;
 
 
 /* overall site reset */
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
@@ -30,6 +34,7 @@ html {
 
 /* set global font parameters*/
 body {
+    box-sizing: border-box;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
@@ -40,8 +45,41 @@ body {
     /* padding: 5px; */ 
 }
 
+/* utility styles */
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-small { margin-bottom: 15px !important; }
+.u-margin-bottom-medium { margin-bottom: 40px !important; }
+.u-margin-bottom-big { margin-bottom: 80px !important; }
+
+.u-margin-top-medium {margin-top: 40px !important; }
+.u-margin-top-big { margin-bottom: 80px !important; }
+.u-margin-top-huge { margin-bottom: 100px !important; }
+
+/* section definitions */
+.section-about {
+    background-image: linear-gradient( 
+        to right bottom, 
+        rgba(247, 247, 247, 0.8), 
+        rgba(255, 184, 77, 0.8));
+}
+
+.section-fonts {
+    background-image: linear-gradient( 
+        to right bottom, 
+        rgba(125, 150, 155, 0.8), 
+        rgba(98, 122, 127, 0.8));
+}
+
+.section-artwork {
+    background-image: linear-gradient( 
+        to right bottom, 
+        rgba(247, 247, 247, 0.8), 
+        rgba(255, 184, 77, 0.8));
+}
+
 .header {
-    height: 100vh;
+    height: 95vh;
     
     background-image: url(../img/logo_headings_removed_text.jpg);
     background-size: 45%;
@@ -86,7 +124,7 @@ body {
 
 .text-box {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -20%);
 
@@ -131,8 +169,15 @@ body {
     transform: translateY(1px);
 }
 
+.footer {
+    background-color: #627a7f;
+    padding: 25px 0;
+    font-size: 14px;
+    color: #f7f7f7;
+}
+
 .front-page__header {
-    height: 600px;
+    height: 725px;
     background-image: url(../img/typecase_with_lead-type.jpg);
     background-size: cover;
 
