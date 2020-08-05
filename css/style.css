@@ -131,6 +131,13 @@ body {
     transform: translateY(1px);
 }
 
+.front-page__header {
+    height: 250px;
+    background-color: #ed462f;
+
+}
+
 .front-page {
     background-color: #627a7f;
+    color: white;
 }
