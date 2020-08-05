@@ -1,13 +1,19 @@
 /* default colors 
-$color-primary:  ;
+$color-primary: #ed462f;
 $color-primary-light: ;
 $color-primary-dark: ;
 
-$color-secondary:  ;
+$color-secondary: #4446e5;
 $color-secondary-light: ;
 $color-secondary-dark: ;
 
-$color-logo: ;
+$color-tertiary: #627a7f;
+
+$color-white: #fff;
+
+$color-grey: #627a7f;
+
+$color-logo: #ed462f;
 */
 
 
@@ -37,7 +43,7 @@ body {
 .header {
     height: 100vh;
     
-    background-image: url(../img/logo_headings_removed_text.png);
+    background-image: url(../img/logo_headings_removed_text.jpg);
     background-size: 45%;
     background-position: center; 
     background-repeat: no-repeat;
@@ -80,7 +86,7 @@ body {
 
 .text-box {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -20%);
 
@@ -112,7 +118,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /*
@@ -123,4 +129,8 @@ body {
 
 .btn:active {
     transform: translateY(1px);
+}
+
+.front-page {
+    background-color: #627a7f;
 }
